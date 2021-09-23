@@ -22,6 +22,7 @@ So.. What are you waiting for? Practice linked!
 `npm run init-start` does everything above: installs dependencies, fetches quizzes and starts the application.
 
 # How it works (for users;)
+![homepage](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/home.png?raw=true)
 
 
 # Missing features
