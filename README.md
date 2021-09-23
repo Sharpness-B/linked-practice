@@ -5,7 +5,7 @@ Then `cd linked-practice`
 
 Run `npm run init-start` to install dependencies, fetch quizzes and start the application.
 
-After that, visit `http://localhost:420/` and start practising linked!
+After that, visit http://localhost:420/ and start practising linked!
 
 # Get up and practising
 This web app lets you practice in a similar environment to an actual Linkedin quiz. 
