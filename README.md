@@ -23,7 +23,7 @@ So.. What are you waiting for? Practice linked!
 
 `npm run pull-quizzes` pulls the latest changes from an already cloned repo.
 
-`npm run fetch-quizzes` clones the quizzes if not already done, if not, it pulls the latest changes
+`npm run fetch-quizzes` clones the quizzes if not already done, otherwise, it pulls the latest changes
 
 `npm run init-start` does everything above: installs dependencies, fetches quizzes and starts the application.
 
