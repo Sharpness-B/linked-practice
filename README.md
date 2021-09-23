@@ -1,4 +1,6 @@
 # Quick start
+Run `git clone https://github.com/Sharpness-B/linked-practice.git` to get a copy of the repo.
+Then `cd linked-practice`
 Run `npm run init-start` to install dependencies, fetch quizzes and start the application.
 
 # Get up and practising
