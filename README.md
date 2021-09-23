@@ -23,6 +23,10 @@ So.. What are you waiting for? Practice linked!
 
 # How it works (for users;)
 ![homepage](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/home.png?raw=true)
+![get ready page](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/start.png?raw=true)
+![quiz](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/quiz.png?raw=true)
+![highlighted answers](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/answer.png?raw=true)
+![result](https://github.com/Sharpness-B/linked-practice/blob/master/readme_images/result.png?raw=true)
 
 
 # Missing features
