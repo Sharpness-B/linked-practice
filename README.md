@@ -1,5 +1,5 @@
 # Quick start
-Run `git clone https://github.com/Sharpness-B/linked-practice.git` to get a copy of the repo.
+Run `git clone https://github.com/Sharpness-B/linked-practice.git` to get a copy of this repo.
 
 Then `cd linked-practice`
 
