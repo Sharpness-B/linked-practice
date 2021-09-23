@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked Practice</title>
+        <link rel="icon"       type="image/png" href="/logo.png">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+
+    <body>
+        <header><%- include('partials/header.ejs') %></header>
+
+        <h1>Don't watch the clock; do what it does.</h1>
+
+        <div id="progress-bar-back">
+            <div id="progress-bar-front"></div>
+        </div>
+
+        <article>
+            <h3><%= question %></h3>
+
+            <form action="<%= next_link %>" method="post">
+                <input type="hidden" name="chosen_questions" value="<%= chosen_questions %>">
+                <input type="hidden" name="n_questions"      value="<%= n_questions %>">
+                <input type="hidden" name="time" id="time"   value="<%= time %>">
+                <input type="hidden" name="subject"          value="<%= subject %>">
+
+                <input type="hidden" name="answer" id="input-answer">
+                
+                <% alternatives.forEach(function(alternative, index) { %>
+                    <p id="<%= index %>" class="alternative <%= (correct==index) ? 'correct':'wrong' %>"><%= alternative %></p>
+                <% }); %>
+
+                <input type="submit" id="input-next-question" value="Next Question">
+            </form>
+
+            <script defer src="/frontend.js"></script>
+        </article>
+    </body>
+</html>

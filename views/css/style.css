@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+header {
+    height: 100px;
+	background-image: radial-gradient(circle farthest-side at top right, transparent, #2867B2), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, black);
+
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav details, 
+header nav a {
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+}
+
+header nav details pre {
+    cursor: text;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-top: 1em;
+    }
+}
+
+
+/* COMMON ELEMENTS */
+body {
+    background-color: FloralWhite;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+h3 {
+    color: #2867B2;
+    margin-bottom: 30px;
+}
+
+article {
+    border-radius: 10px;
+	width: 1000px;
+    max-width: 90vw;
+    margin: 50px auto;
+	padding: 10px;
+	background: white;
+    box-shadow: 0px 0px 15px lightgray;
+}
+
+
+
+/* FRONTPAGE */
+form * {
+    text-align: center;
+}
+
+#container-input-settings {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-quiz-link, #input-start, #input-next-question {
+    cursor: pointer;
+
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+
+
+/* READY */
+#input-start {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* input styling shared with FRONTPAGE */
+}
+
+
+
+/* QUIZ */
+.alternative {
+    cursor: pointer;
+    margin: 5px auto;
+    /* input styling shared with FRONTPAGE */
+}
+
+#input-next-question {
+    display: none; /* -> is set to "block" in handle-answer.js*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* progress bar */
+#progress-bar-back {
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+
+#progress-bar-front {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}

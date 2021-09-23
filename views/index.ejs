@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked Practice</title>
+        <link rel="icon"       type="image/png" href="/logo.png">
+        <link rel="stylesheet" type="text/css"  href="/style.css">
+    </head>
+
+    <body>
+        <header><%- include('partials/header.ejs') %></header>
+
+        <h1>Get confident in Linkedin skill assessments quizzes</h1>
+        
+        <article>
+            <h3>Set a config and choose a quiz!</h3>
+
+            <form>
+                <div id="container-input-settings">
+                    <div>
+                        <label for="input-time">Time per question (0 to remove the timer):</label>
+                        <input type="number" value="90" min="0" step="10" id="input-time" name="input-time">
+                    </div>
+                    <div>
+                        <label for="input-n-questions">Number of questions (0 for all we have):</label>
+                        <input type="number" value="15" min="0" id="input-n-questions" name="input-n-questions">
+                    </div>
+                </div>
+
+                <div class="ul-quiz-list">
+                    <% quizzes.forEach(function(quiz) { %>
+                        <input type="submit" class="input-quiz-link" value="<%= quiz %>" onclick="javascript: form.action='/start/<%= quiz %>';">
+                    <% }); %>
+                </div>
+            </form>
+        </article>
+    </body>
+</html>

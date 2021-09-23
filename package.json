@@ -1,0 +1,22 @@
+{
+  "name": "linkedpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clone-quizzes": "git clone https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes.git",
+    "pull-quizzes": "git -C linkedin-skill-assessments-quizzes pull",
+    "fetch-quizzes": "node fetch-quizzes.js",
+    "start": "node .",
+    "init-start": "npm install & npm run fetch-quizzes & npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

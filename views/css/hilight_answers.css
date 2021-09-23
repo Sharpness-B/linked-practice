@@ -1,0 +1,11 @@
+.correct {
+    border: 1px solid green;
+}
+
+.wrong {
+    border: 1px solid red;
+}
+
+.alternative {
+    margin: 3px auto;
+}

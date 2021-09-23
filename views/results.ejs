@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked Practice</title>
+        <link rel="icon"       type="image/png" href="/logo.png">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+
+    <body>
+        <header><%- include('partials/header.ejs') %></header>
+
+        <h1>Wham Baam Here's Your Results, Man!</h1>
+
+        <article>
+            <h3><%= subject %></h3>
+            
+            <p>correct answers: <%= n_correct_answers %></p>
+            <p>questions: <%= n_questions %></p>
+            <p>percentage: <%= percentage %></p>
+        </article>
+    </body>
+</html>

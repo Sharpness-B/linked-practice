@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked Practice</title>
+        <link rel="icon"       type="image/png" href="/logo.png">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+
+    <body>
+        <header><%- include('partials/header.ejs') %></header>
+
+        <h1>Ready for some <%= subject %>?</h1>
+
+        <article>
+            <h3>Let's get ready to rumble!</h3>
+            <% if(time != 0){ %>
+                <p><%= n_questions %> questions of <%= time %> seconds each.</p>
+              <% } else{ %>  
+                <p><%= n_questions %> questions.</p>
+             <% } %>
+
+            <form action="/round/0" method="post">
+                <input type="hidden" name="chosen_questions" value="<%= chosen_questions %>">
+                <input type="hidden" name="n_questions"      value="<%= n_questions %>">
+                <input type="hidden" name="time"             value="<%= time %>">
+                <input type="hidden" name="subject"          value="<%= subject %>">
+
+                <input id="input-start" type="submit" value="Start!">
+            </form>
+        </article>
+    </body>
+</html>
